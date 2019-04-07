@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>formulaz 2</title>
+  </head>
+  <body>
+    <form  action="#" method="post">
+      <input type="login" name="login" placeholder="login" autofocus
+      autocomlete="off"><br><br>
+      <input type="password" name="pass" placeholder="haswo"><br><br>
+      <input type="number" name="liczba1" step="10"><br><br>
+      <input type="number" name="liczba2" step="0.1"><br><br>
+
+      Daty:<br><br>
+      <input type="date" name="data1" ><br><br>
+      <input type="time" name="data2" ><br><br>
+      <input type="datetime-local" name="date3"><br><br>
+      <input type="week" name="date4"><br><br>
+      <input type="month" name="date5"><br><br>
+
+      Telefon:<br><br>
+      <input type="tel" name="Telefon" ><br><br>
+
+      Kolor:<br><br>
+      <input type="color" name="Kolor"><br><br>
+
+      Zakres:<br><br>
+      <input type="range" name="Zakres"><br><br>
+
+      Lista
+      <label>dzien tygodnia</label>
+      <input type="text" name="dzien" list="tygodnia"><rb></rb>
+      <datalist id="tydzien">
+        <option value="">Ponidziawek</option>
+        <option value="">Wtorek</option>
+        <option value="">Sroda</option>
+        <option value="">Czwartek</option>
+        <option value="">Piontek</option>
+        <option value="">Sobota</option>
+        <option value="">Niedziela</option>
+      </datalist>
+
+      Wyrazenie reguralne:<br><br>
+      Pesel:
+      <input type="text" name="pesel" pattern="[0-9]{11}"required><rb></rb>
+
+      Kod pocztowy:
+      <input type="text" name="Kod" pattern="\d{2}-\d{3}"placeholder="00-000"required><br><br>
+
+      Adres Ip:<br><br>
+<!-- 192.168.100.1 -->
+      <input type="text" name="Adres IP" pattern= "\d{3}.\d{3}.\d{3}.\d{1}"><br><br>
+      Adres Mac
+<!-- 11AADD1234aa 11:AA:DD:12:11AADD1234aa -->
+      <input type="text" name="Adres Mac" pattern="\d{2}[A-Z]{4}\d{4}[a-z]{2}\ d{2}:[A-Z]{2}:[A-Z]{2}:\d{2}:\d{2}[A-Z]{4}\d{4}[a-z]{2}">
+      <input type="submit" name="przycisk" value="wyslij">
+    </form>
+  </body>
+</html>
